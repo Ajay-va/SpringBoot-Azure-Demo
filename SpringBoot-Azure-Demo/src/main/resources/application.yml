@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://sample-demo.database.windows.net:1433;database=Azure-SQLDB;user=sample-demo@sample-demo;password=root123@;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: sample-demo
+    password: root123@
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.SQLServer2012Dialect
+
+  application:
+    name: SpringBoot-Azure-Demo
+
+server:
+    port: 9090
+
+
+
+
+
+
+
+
+
